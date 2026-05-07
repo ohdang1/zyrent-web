@@ -282,6 +282,7 @@
       footer { flex-direction: column; text-align: center; }
     }
   </style>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
@@ -601,7 +602,7 @@
     };
 
     try {
-      const res = await fetch('http://localhost:8000/contact', {
+      const res = await fetch('https://formspree.io/f/mzdoarbv', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
